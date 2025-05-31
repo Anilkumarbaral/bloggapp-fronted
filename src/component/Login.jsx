@@ -13,7 +13,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/auth/login",
+        "http://51.20.105.48:8080/api/auth/login",
         {
           username,
           password,

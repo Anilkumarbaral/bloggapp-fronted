@@ -22,7 +22,7 @@ function PostList() {
       }
       try {
         const response = await axios.get(
-          "http://localhost:8080/api/posts/published?page=0&size=10",
+          "http://51.20.105.48:8080/api/posts/published?page=0&size=10",
           {
             headers: {
               Authorization: `Bearer ${token}`,

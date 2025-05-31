@@ -19,7 +19,7 @@ function CreatePost() {
       const authorId = 1;
       const token = localStorage.getItem("token");
       await axios.post(
-        `http://localhost:8080/api/posts?authorId=${authorId}`,
+        `http://51.20.105.48:8080/api/posts?authorId=${authorId}`,
         {
           title,
           excerpt,
