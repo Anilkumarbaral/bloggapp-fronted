@@ -100,13 +100,24 @@ function CreatePost() {
             onChange={(e) => setCategoryId(e.target.value)}
           >
             <option value="">Select Category</option>
-            <option value="4">Java</option>
-            <option value="5">Spring</option>
+            <option value="1">Java</option>
+            <option value="2">Python</option>
+            <option value="3">Random</option>
+            <option value="4">Spring Boot</option>
             <option value="6">Hibernate/JPA</option>
             <option value="7">Security</option>
           </select>
         </div>
         <button className="btn btn-primary">Publish</button>
+        <button
+          type="button"
+          className="btn btn-secondary ms-2"
+          onClick={() => {
+            window.location.href = "/posts"; // Redirect to the post list page
+          }}
+        >
+          See Posts
+        </button>
       </form>
     </div>
   );
